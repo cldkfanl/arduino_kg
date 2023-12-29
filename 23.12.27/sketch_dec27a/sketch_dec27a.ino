@@ -49,7 +49,7 @@ void aa(){
     }
     if(Lstate){
       Serial.println("Left click");
-      delay(50);
+      delay(1000);
     }
 
     
@@ -61,6 +61,7 @@ void aa(){
     }
     if(Rstate){
       Serial.println("Right click");
+      delay(1000);
     }
 
 

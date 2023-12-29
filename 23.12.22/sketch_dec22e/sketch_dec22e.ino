@@ -1,3 +1,5 @@
+//Serial통신, 입력값에 따라 출력값 변경
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
