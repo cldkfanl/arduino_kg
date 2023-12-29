@@ -82,6 +82,7 @@ void HC06proc(){
       case 's' :
       Ls();
       Rs();
+      break;
       case 'z' :
       if(baseSpeed < 200){
         baseSpeed += 10;
@@ -106,14 +107,14 @@ void USSensor(){
   Serial.println(distance);
   if(distance < 50){
     digitalWrite(LED, HIGH);
-    Serial.println("w");
-    HC06.println("w");
+    Serial.println('w');
+    HC06.println('w');
     delay(500);
   }
   else{
     digitalWrite(LED, LOW);
-    Serial.println("s");
-    HC06.println("s");
+    Serial.println('s');
+    HC06.println('s');
     delay(500);
   }
 }
